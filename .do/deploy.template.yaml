@@ -9,5 +9,6 @@ functions:
   name: nodejs-api
   routes:
   - path: /
+  - path: /user
   source_dir: /
 name: nodejs-helloworld

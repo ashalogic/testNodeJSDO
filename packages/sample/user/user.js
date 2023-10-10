@@ -6,12 +6,11 @@ function main() {
 
   var data = {};
   fetch("https://www.instagram.com/taylorswift/?__a=1&__d=dis", requestOptions)
-    .then((response) => {
-      data = response.text();
+    .then(async (response) => {
+      data = await response.json();
+      return data;
     })
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
-
-  return data;
 }
 exports.main = main;

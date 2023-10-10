@@ -1,4 +1,4 @@
-function getUserProfile() {
+function main() {
   var requestOptions = {
     method: "GET",
     redirect: "follow",
@@ -14,4 +14,4 @@ function getUserProfile() {
 
   return data;
 }
-exports.getUserProfile = getUserProfile;
+exports.main = main;
